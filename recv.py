@@ -4,7 +4,7 @@ import json
 app = Flask(__name__)
 
 
-@app.route('/log', methods=["GET", 'POST'])
+@app.route('/', methods=["GET", 'POST'])
 def index():
     print(json.dumps(request.form))
     return "App is running."
